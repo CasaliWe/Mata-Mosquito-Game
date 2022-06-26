@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script>
+         const mscInicio = new Audio()
+         mscInicio.src = "./song/song-inicio.mp3"
+    </script>
+    <title>Game Mata-Mosquito</title>
+</head>
+<body onload="mscInicio.play()" onresize="ajustaTamanhoPalcoJogo()">
+      
+        <div id="gameover">
+            <img src="imagens/game.png" alt="" style="width: 250px;">
+                 <select name="nivel" id="nivel">
+                 <option value="n1">Fácil</option>
+                 <option value="n2">Normal</option>
+                 <option value="n3">Endemôniado</option>
+            </select>
+
+            <button id="inicarJogo" onclick="iniciarJogo()">Iniciar</button>
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="jogo.js"></script>
+</body>
+</html>

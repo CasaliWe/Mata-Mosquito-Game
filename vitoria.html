@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
+    <script>
+        const vitoria = new Audio()
+        vitoria.src = "./song/vitoria-song.mp3"
+    </script>
     <title>Game Mata-Mosquito</title>
 </head>
-<body onresize="ajustaTamanhoPalcoJogo()">
+<body onload="vitoria.play()" onresize="ajustaTamanhoPalcoJogo()">
       
         <div id="gameover">
             <img src="imagens/vitoria.png" alt="">
-            <a href="app.html">Reiniciar</a>
+            <div id="resPontos"></div>
+            <a href="index.html">Reiniciar</a>
         </div>
     
 
@@ -28,5 +33,10 @@
 
 
     <script src="jogo.js"></script>
+    <script>
+        var pontosFinais =  window.location.search
+        pontosFinais = pontosFinais.replace('?', '')
+        document.getElementById('resPontos').textContent = `Sua pontuação foi: ${pontosFinais}`
+    </script>
 </body>
 </html>

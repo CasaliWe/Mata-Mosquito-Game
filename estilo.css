@@ -7,7 +7,31 @@
 body {
     background-image: url('imagens/bg.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
 }
+
+
+/*Index selção de nivel e btn inicar*/
+#nivel {
+    background-color: orangered;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid or;
+}
+
+#inicarJogo {
+    background-color: orangered;
+    padding: 5px;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    color: white;
+    margin-top: 20px;
+    width: 100px;
+    cursor: pointer;
+}
+
+
 
 
 /*Mosquito personagem*/
@@ -28,7 +52,7 @@ body {
 
 
 
-/*Painel, vidas e cronometro*/
+/*Painel, vidas, cronometro e btn sair*/
 .painel {
       position: absolute;
       width: 190px;
@@ -36,17 +60,27 @@ body {
       bottom: 0;
       background-color: white;
       opacity: 0.7;
-}
-
-.vidas {
-     float: left;
+      display: flex;
+      flex-direction: column;
 }
 
 .cronometro {
-    float: left;
     font-size: 20px;
     font-weight: bold;
 }
+
+#sair {
+   color: black;
+   text-decoration: none;
+   padding-top: 5px 10px;
+   border: 1px solid orangered;
+   background-color: orangered;
+   width: 50px;
+   text-align: center;
+   margin-top: 10px;
+}
+
+
 
 
 /*Game Over*/
@@ -77,4 +111,33 @@ body {
  #gameover a:hover {
     color: black;
     cursor: pointer;
+ }
+
+
+
+ /*Pontos app, gameover e vitória*/
+#pontosPlacar {
+     color: black;
+     font-size: 20px;
+     font-weight: bold;
+}
+
+
+ #resPontos{
+     margin: 15px;
+     text-align: center;
+     color: white;
+     font-size: 20px;
+ }
+
+
+
+ /*Contagem regressiva*/
+ #regress {
+      position: fixed;
+      top: 40%;
+      text-align: center;
+      width: 100%;
+      font-size: 50px;
+      color: red;
  }
