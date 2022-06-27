@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    cursor: url('./imagens/mata_mosca.png') 30 30 , auto; 
+}
+
 body {
     background-image: url('imagens/bg.jpg');
     background-repeat: no-repeat;
@@ -140,4 +144,15 @@ body {
       width: 100%;
       font-size: 50px;
       color: red;
+ }
+
+
+ @media (max-width: 575.98px) {
+    body {background-size: 1000px;}
+    #gameover a {width: 130px;}
+    .painel {width: 140px;}
+    .painel img {width: 20px;}
+    .cronometro {font-size: 14px;}
+    #sair {font-size: 14px;}
+    #pontosPlacar {font-size: 13px;}
  }
